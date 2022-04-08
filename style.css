@@ -23,8 +23,6 @@ body {
     /* Fade in animation */
     opacity: 0;
     transition: opacity 1s ease-in-out;
-    -moz-transition: opacity 1s ease-in-out;
-    -webkit-transition: opacity 1s ease-in-out;
 }
 
 .archives-navbar {
@@ -43,7 +41,7 @@ body {
 
 .archive-name {
     cursor: pointer;
-    font-size: 2.5rem;
+    font-size: 3vw;
     margin: 0 1vw;
 }
 
@@ -51,4 +49,27 @@ body {
     background-color: #919494;
     color: #1e489c;
     border-color: #1e489c;
+}
+
+#content {
+    padding: 5rem;
+
+    /* Fade in animation */
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.sobre {
+    display: flex;
+    align-items: center;
+}
+
+.content {
+    margin-left: 5%;
+    font-size: 1.3vw;
+}
+
+.avatar-img {
+    border-radius: 50%;
+    height: 20vw;
 }

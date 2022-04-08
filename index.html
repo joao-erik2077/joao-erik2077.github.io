@@ -16,21 +16,29 @@
     <div id="main">
         <div class="archives-navbar">
             <div class="archive">
-                <a class="archive-name">tecnologias.java</a>
+                <a class="archive-name" onclick="tecnologias()">tecnologias.java</a>
             </div>
             <div class="archive">
-                <a class="archive-name">projetos.css</a>
+                <a class="archive-name" onclick="projetos()">projetos.css</a>
             </div>
             <div class="archive">
-                <a class="archive-name">dados.js</a>
+                <a class="archive-name" onclick="dados()">dados.js</a>
             </div>
             <div class="archive">
-                <a class="archive-name">sobre.html</a>
+                <a class="archive-name" onclick="sobre()">sobre.html</a>
             </div>
+        </div>
+        <div id="content">
         </div>
     </div>
 
     <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const main = document.getElementById('main');
+            main.style.opacity = '1';
+        });
+    </script>
 </body>
 
 </html>
