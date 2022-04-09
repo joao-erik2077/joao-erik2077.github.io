@@ -22,7 +22,7 @@ body {
 
     /* Fade in animation */
     opacity: 0;
-    transition: opacity 1s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
 }
 
 .archives-navbar {
@@ -56,7 +56,7 @@ body {
 
     /* Fade in animation */
     opacity: 0;
-    transition: opacity 0.5s ease-in-out;
+    transition: opacity 1s ease-in-out;
 }
 
 .sobre {
@@ -72,4 +72,18 @@ body {
 .avatar-img {
     border-radius: 50%;
     height: 20vw;
+}
+
+.dados {
+    display: flex;
+    align-items: center;
+}
+
+.email {
+    color: #102b61;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.email:hover {
+    color: #e9ff1f;
 }
