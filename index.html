@@ -5,40 +5,90 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>joao-erik2077</title>
     <link rel="stylesheet" href="style.css">
-    <title>Joao Érik</title>
 </head>
 
 <body>
-    <!-- github avatar
-        <img src="https://avatars.githubusercontent.com/u/79710675?v=4" alt="Profile Picture">
-    -->
-    <div id="main">
-        <div class="archives-navbar">
-            <div class="archive">
-                <a class="archive-name" onclick="tecnologias()">tecnologias.java</a>
-            </div>
-            <div class="archive">
-                <a class="archive-name" onclick="projetos()">projetos.css</a>
-            </div>
-            <div class="archive">
-                <a class="archive-name" onclick="dados()">dados.js</a>
-            </div>
-            <div class="archive">
-                <a class="archive-name" onclick="sobre()">sobre.html</a>
-            </div>
-        </div>
-        <div id="content">
-        </div>
+
+    <div class="cloud" style="top: 7vh; left: 8vw;">
+        <div class="first-cloud-part cloud-part"></div>
+        <div class="second-cloud-part cloud-part"></div>
+        <div class="third-cloud-part cloud-part"></div>
     </div>
 
+    <div class="cloud" style="top: 19vh; left: 86vw;">
+        <div class="first-cloud-part cloud-part"></div>
+        <div class="second-cloud-part cloud-part"></div>
+        <div class="third-cloud-part cloud-part"></div>
+    </div>
+
+    <div class="cloud" style="top: 50vh; left: 75vw;">
+        <div class="first-cloud-part cloud-part"></div>
+        <div class="second-cloud-part cloud-part"></div>
+        <div class="third-cloud-part cloud-part"></div>
+    </div>
+
+    <div class="grass-1"></div>
+    <div class="grass-2"></div>
+
+    <main>
+        <div id="main">
+            <div class="buttons">
+                <a class="button" id="sobre-btn">SOBRE</a>
+                <a class="button" id="projetos-btn">PROJETOS</a>
+            </div>
+            <div class="profile">
+                <img src="https://avatars.githubusercontent.com/u/79710675?v=4" class="profile-picture">
+            </div>
+            <div class="name">
+                <h1><a class="button" href="https://github.com/joao-erik2077">joao-erik2077</a></h1>
+            </div>
+        </div>
+
+        <div id="sobre" class="modal">
+            <div class="modal-content">
+                <div class="text">
+                    <div style="text-align: center;">
+                        <h1>BOM DIA!</h1>
+                        <h4>Eu sou João Érik da Silva Crisóstomo, estudante de Desenvolvimento de Sistemas</h4><br>
+                        <h2>-> Linguagens</h2>
+                        <p>Java, Javascript, Typescript, Kotlin</p>
+                        <h2>-> FrameWorks</h2>
+                        <p>Bootstrap, Springboot, Angular, Ionic</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="projetos" class="modal">
+            <div class="modal-content">
+                <div class="item-list">
+                    <div class="item">
+                        <div>
+                            <img src="img/termulary.png" class="thumbnail">
+                        </div>
+                        <h1 class="title">Termulary</h1>
+                        <div class="btns">
+                            <a href="https://joao-erik2077.github.io/termulary/" class="button-p">VER</a>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div>
+                            <img src="img/eventosApp.png" class="thumbnail">
+                        </div>
+                        <h1 class="title">Eventos App</h1>
+                        <div class="btns">
+                            <a href="https://appspringeventos.herokuapp.com/eventos" class="button-p">VER</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
     <script src="script.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const main = document.getElementById('main');
-            main.style.opacity = '1';
-        });
-    </script>
 </body>
 
 </html>
