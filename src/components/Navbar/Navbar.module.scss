@@ -3,17 +3,23 @@
     justify-content: end;
     height: 12vh;
 
-    & .items {
+    .items {
         display: flex;
         justify-content: center;
         align-items: center;
         margin-right: 25px;
 
-        & a {
+        a {
             text-decoration: none;
             font-size: 2rem;
             font-weight: 700;
             margin: 0 15px 0 15px;
+            transition: .3s;
+            color: #FBFFFE;
+
+            &:hover {
+                color: #C8CCCB;
             }
+        }
     }
 }
