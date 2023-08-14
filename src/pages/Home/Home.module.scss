@@ -1,0 +1,37 @@
+.main {
+    height: 88vh;
+    display: flex;
+
+    section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    aside {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        width: 100%;
+        img {
+            margin-right: 3vw;
+            height: 75%;
+            border-radius: 50%;
+        }
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 12vw;
+}
+
+.title {
+    font-size: 3rem;
+}
+
+.text {
+    font-size: 1rem;
+}
