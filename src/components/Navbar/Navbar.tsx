@@ -1,16 +1,15 @@
-import { Component } from "react";
 import styles from './Navbar.module.scss';
+import { Link, useLocation } from 'react-router-dom';
 
-export default class Navbar extends Component {
-    render() {
-        return <>
-            <nav className={styles.navbar}>
-                <div className={styles.items}>
-                    <a href="#sobremim">Sobre Mim</a>
-                    <a href="#projetos">Projetos</a>
-                    <a href="#contato">Contato</a>
-                </div>
-            </nav>
-        </>;
-    }
+export default function Navbar() {
+    const location = useLocation();
+    return <>
+        <nav className={styles.navbar}>
+            <div className={styles.items}>
+                <Link to='/aboutme' className={`${styles.link} ${location.pathname === '/aboutme' ? styles.highlight : ''}`}>Sobre Mim</Link>
+                <Link to='/projects' className={`${styles.link} ${location.pathname === '/projects' ? styles.highlight : ''}`}>Projetos</Link>
+                <Link to='/contact' className={`${styles.link} ${location.pathname === '/contact' ? styles.highlight : ''}`}>Contato</Link>
+            </div>
+        </nav>
+    </>;
 }

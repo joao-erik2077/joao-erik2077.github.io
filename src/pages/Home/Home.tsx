@@ -1,13 +1,11 @@
-import { Component } from 'react';
+import { Component, ReactNode } from 'react';
 import styles from './Home.module.scss';
-import Navbar from '../../components/Navbar/Navbar';
 import Avatar from '../../assets/avatar.png';
 
 export default class Home extends Component {
 
-    render() {
+    render(): ReactNode {
         return <>
-            <Navbar />
             <main className={styles.main}>
                 <section>
                     <div className={styles.container}>

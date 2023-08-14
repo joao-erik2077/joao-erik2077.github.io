@@ -8,18 +8,23 @@
         justify-content: center;
         align-items: center;
         margin-right: 3vw;
+    }
+}
 
-        a {
-            text-decoration: none;
-            font-size: 2rem;
-            font-weight: 700;
-            margin: 0 15px 0 15px;
-            transition: .3s;
-            color: #FBFFFE;
+.link {
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0 15px 0 15px;
+    transition: .3s;
+    color: #FBFFFE;
+    cursor: pointer;
 
-            &:hover {
-                color: #C8CCCB;
-            }
-        }
+    &:hover {
+        color: #C8CCCB;
+    }
+
+    &.highlight {
+        color: #3db899;
     }
 }
