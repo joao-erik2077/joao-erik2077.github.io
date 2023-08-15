@@ -1,0 +1,39 @@
+.main {
+    width: 25vw;
+    height: 35vh;
+    background-color: #30343F;
+    border-radius: .7rem;
+
+    display: grid;
+}
+
+.name {
+    justify-self: center;
+    align-self: normal;
+    text-align: center;
+    margin: 15px;
+}
+
+.description {
+    justify-self: center;
+    align-self: normal;
+    text-align: center;
+    margin: 15px;
+}
+
+.link {
+    text-decoration: none;
+    background-color: #5568B5;
+    padding: 1vh 40%;
+    font-size: 1.5rem;
+    font-weight: 700;
+    border-radius: .7rem;
+    transition: .3s;
+    justify-self: center;
+    align-self: end;
+    margin-bottom: 15px;
+
+    &:hover {
+        background-color: #4b5ca0;
+    }
+}

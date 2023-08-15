@@ -1,0 +1,6 @@
+.projects {
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: repeat(3, auto);
+    gap: 2rem;
+}
