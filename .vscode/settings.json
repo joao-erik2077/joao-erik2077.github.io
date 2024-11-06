@@ -2,5 +2,21 @@
     "cSpell.words": [
         "joao",
         "João"
-    ]
+    ],
+    "files.exclude": {
+        ".next": true,
+        ".vscode": true,
+        "node_modules": true,
+        "public": true,
+        ".eslintrc.json": true,
+        ".gitignore": true,
+        "next-env.d.ts": true,
+        "next.config.ts": true,
+        "package-lock.json": true,
+        "package.json": true,
+        "postcss.config.mjs": true,
+        "README.md": true,
+        "tailwind.config.ts": true,
+        "tsconfig.json": true
+    }
 }
