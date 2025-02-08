@@ -10,10 +10,11 @@ helloWorldContainer.addEventListener("click", () => {
 
 const changeAnimation = (previous, next) => {
   previous.style.opacity = "0";
+  next.style.visibility = "visible";
 
   setTimeout(() => {
     previous.style.display = "none";
     next.style.display = "flex";
     next.style.opacity = "1";
-  }, 1300);
+  }, 1000);
 };

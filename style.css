@@ -9,6 +9,7 @@ html,
 body {
   min-width: 100vw;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 .content {
@@ -44,7 +45,8 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  transition: opacity 1s ease-in-out;
+  transition: opacity 0.8s ease-in-out;
+  visibility: hidden;
   * {
     color: #00ff00;
   }
@@ -58,6 +60,7 @@ body {
 }
 .title {
   width: fit-content;
+  font-size: 2rem;
 }
 
 .info-header {
@@ -86,7 +89,22 @@ ul {
 
     P {
       margin-top: 4px;
+      font-size: 1rem;
       max-width: 30%;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  :root {
+    font-size: 14px;
+  }
+
+  ul {
+    li {
+      p {
+        max-width: 90%;
+      }
     }
   }
 }
